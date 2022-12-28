@@ -5,6 +5,8 @@ import {Schema} from "prosemirror-model"
 import {builders, NodeBuilder, MarkBuilder} from "./build"
 export {builders, NodeBuilder, MarkBuilder} from "./build"
 
+console.log(addListNodes(bSchema.spec.nodes, "paragraph block*", "block"));
+
 export const schema = new Schema({
   nodes: addListNodes(bSchema.spec.nodes, "paragraph block*", "block"),
   marks: bSchema.spec.marks
